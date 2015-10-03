@@ -42,7 +42,7 @@ module.exports = {
               if (err)
                 return done(err);
               connection.release();
-              return done(null, rows, fields, numStatements);
+              return done(null, rows);
             });
           });
       };
